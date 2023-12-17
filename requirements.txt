@@ -1,2 +1,3 @@
 Pandas
 Streamlit
+Pyarrow
