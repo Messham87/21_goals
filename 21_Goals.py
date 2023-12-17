@@ -58,4 +58,4 @@ with JM:
     st.header(df["Goals"].sum().astype(int))
     st.dataframe(df.sort_values("Goals", ascending = False), hide_index = True)
 
-st.text(f"Last refresh: {datetime.datetime.fromtimestamp(os.path.getmtime(filePath))}")
+st.text(f"Last refresh: {goals_data['updated'].max()}")
